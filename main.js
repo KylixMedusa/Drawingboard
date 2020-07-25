@@ -103,4 +103,3 @@ draw = {
 	document.body.addEventListener('touchmove',function(evt){
 		evt.preventDefault();
 	},false);
-};
