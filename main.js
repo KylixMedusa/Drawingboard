@@ -59,4 +59,9 @@ colorpicker.addEventListener('focus',e=>{
     color = colorpicker.value;
 })
 
-	
+
+const downloadbtn = document.getElementById('download');
+downloadbtn.addEventListener('click', function (e) {
+    var dataURL = myPics.toDataURL("image/png;base64");
+    downloadbtn.href = dataURL;
+});
